@@ -53,6 +53,8 @@ The basic flow works like this:
   of that peer's subscriptions and if it does, send them the `pub`
   command.
 
+* Receive `pub` commands with requested data/updates.
+
 For many applications with limited networks the above will be adequate.
 
 # Message/Data Forwarding Convention
