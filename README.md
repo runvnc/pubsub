@@ -4,12 +4,15 @@ Commands sent over TCP: (pub)lish, (sub)scribe, (unsub)scribe.
 Messages are not forwarded by default although there is a convention for
 this using names starting with /fwd/ (see below).
 
-```pub <name> <length> <data>
+```
+pub <name> <length> <data>
 sub <pcre>
-unsub <pcre>```
+unsub <pcre>
+```
 
-Names cannot contain spaces.   Subscribe and unsubscribe to groups of
-messages using PCREs (Perl Compatible Regular Expressions).
+Names cannot contain spaces.  Names and text data are encoded in UTF-8.
+Subscribe and unsubscribe to groups of messages using PCREs 
+(Perl Compatible Regular Expressions).
 
 Example:
 
@@ -20,8 +23,11 @@ pub myorg/chat/main 5 hello
 
 The most compatible convention is to specify names as paths using
 `/`, but this is not a requirement.  Names can be anything as long as they
-don't contain spaces.  Other than no spaces, aplications may create 
-their own conventions for names.
+don't contain spaces.  Other than UTF-8 and no spaces, applications may 
+create their own conventions for names.  Names are not required to 
+begin with or contain `/`.
+
+Note the space after the length and before the data starts in `pub`.
 
 For many applications with limited networks the above will be adequate.
 
@@ -49,5 +55,4 @@ Publishing peer data:
 ```
 pub /peers/myorg/bob 12 1.2.3.4 9014
 ```
-
 
