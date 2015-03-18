@@ -59,6 +59,6 @@ pub /peers/myorg/bob 12 1.2.3.4 9014
 # Overlay Networks
 
 Applications may choose their own conventions for creating
-peer networks and ensuring efficient and reliable delivery
+peer networks and ensuring efficient, reliable, and secure delivery
 of messages, so long as they use the three commands as specified.
 
