@@ -62,10 +62,10 @@ all peers directly connected, a simple convention for subscribing to
 forwarded data looks like this:
 
 ```
-sub //fwd//myorg/chat/
+sub //fwd/myorg/chat/
 ```
 
-Upon receiving `//myorg/chat` data, publish a copy to `//fwd//myorg/chat`. 
+Upon receiving `//myorg/chat` data, publish a copy to `//fwd/myorg/chat`. 
 
 # Peer Discovery Example
 
