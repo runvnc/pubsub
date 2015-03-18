@@ -10,9 +10,9 @@ Messages are not forwarded by default although there is a convention for
 this using names starting with //fwd/ (see below).
 
 ```
-pub <name> <length> <data>
-sub <substring>
-unsub <substring>
+pub <name> <length> <data><LF>
+sub <substring><LF>
+unsub <substring><LF>
 ```
 
 Names cannot contain spaces or CR or LF.  Commands, names and text 
