@@ -32,7 +32,7 @@ pub //myorg/chat/main 5 hello
 In the example above we subscribe to all messages with names containing 
 the text `//myorg/chat/` and then publish a `hello` message to that
 name.  In this application names represent simple message channels; 
-other application may adopt a convention requiring data to have unique
+other application may adopt a convention requiring names to have unique
 ids or have other constraints/schemes. 
 
 The most compatible convention is to specify names as paths using
